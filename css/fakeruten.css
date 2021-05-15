@@ -1,4 +1,12 @@
+@import "reset.css";
 
+img{
+  max-width: 100%;
+}
+input{
+  border: none;
+  outline: none;
+}
 .ad-top{
     display:flex;
     background-color : #f5f5f5;
@@ -8,8 +16,7 @@
     height:80px;
     width: auto;
     align-items:center;
-    max-width: auto;
-  }
+}
   .header{
     display:flex;
     background-color:rgb(255, 255, 255);
@@ -32,6 +39,18 @@
     font-size: 14px;
     padding: 8px 10px 8px 10px
   }
+  @media only screen and (min-width: 1024px) {
+    
+  }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+      
+  }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+      
+  }
+  @media only screen and (min-width: 0px) and (max-width: 320px){
+     
+  }
   .search{
     height:100px;
     display:grid;
@@ -45,6 +64,7 @@
     justify-content: center;
     grid-column: 2/3;
     padding-top: 15px;
+    grid-auto-flow: column;
   }
   .search-item{
     grid-column: 3/4;
@@ -54,35 +74,45 @@
     display: flex;
     background-color: #FFFFFF;
     height: 50px;
-    width: auto;
     box-shadow: rgba(0, 0, 0, 0.18) 1px 1px 3px 0px inset,
      rgba(0, 0, 0, 0.12) 1px 1px 6px 0px inset;
     border-radius: 2px;
+    
   }
   .search-item-inner-text{
     background-color: #FFFFFF;
     align-items: center;
-    width: 595px;
     margin: 5px 10px;
     border: none;
-    outline: none
+    outline: none;
+    width: 90%;
+    flex-grow: 1;
+    flex-shrink: 1 ;
   }
   .search-item-inner > select{
     background-color: rgba(124,124,124,.08);
-    align-items: center;
-    margin: 5px 10px;
+    margin: 5px 0px;
     font-size: 15px;
     border: none;
-    outline: none
+    outline: none;
+    flex-shrink: 1 ;
+    width: 15%;
+    cursor: pointer;
+    padding-left: 10px ;
   }
   .search-item-inner-button{
     background-color: #ffffff;
     border: none;
-    width: 35px;
+    width: 5%;
     margin: 5px 10px;
     background-image: url("../images/search.svg");
     background-repeat: no-repeat;
     background-size: 30px 45px;
+    flex-shrink: 1 ;
+    background-position: center;
+    max-width: 100%;
+    outline: none;
+    cursor: pointer;
   }
   .search-nav{
     grid-column: 4/5;
@@ -95,10 +125,50 @@
   .search-nav-item{
     height: 100%;
     width: 25%;
-    background-color: chartreuse;
-    background-repeat: no-repeat;
-    border: none;
+    text-align: center;
+    font-size: 10px;
+    color: azure;
+    margin: 0 5px;
   }
+  .search-nav-item > input{
+    width: 100%;
+    height: 65%;
+    background-color: transparent ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-position: center;
+    margin-bottom: 5px;
+  }
+  .counting-item{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-items: center;
+  }
+  .counting-icon{
+    width:22px;
+    height: 19px;
+    background: url("../images/sprite_index.png") no-repeat -8px 0;
+  }
+  .counting-number{
+    color: azure;
+    width: 50%;
+    font-size: 13px;
+    text-align: center;
+  }
+  .search-item-link{
+    display: flex;
+    grid-column: 3/4;
+    font-size: 13px;
+    color:azure;
+  }
+  .search-item-link > span{
+    margin-top: 1%;
+    margin-left:2%;
+    cursor: pointer;
+  }
+
   .exclusive-store{
     display:flex;
     height:26px;
