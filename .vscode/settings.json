@@ -1,3 +1,4 @@
 {
-    "search.useReplacePreview": false
+    "search.useReplacePreview": false,
+    "liveServer.settings.port": 5501
 }

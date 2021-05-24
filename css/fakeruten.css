@@ -327,12 +327,12 @@ input{
     text-align: center;
     cursor: default;
   }
-  .main-ad-block-2img{
-    background-image: url(../images/block1-2.jpg);
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
+  .change-picture{
+    display: flex;
+    overflow: hidden;
+  }
+  .hide{
+    display: none;
   }
   .tab-ad-block{
     background-color:green;
