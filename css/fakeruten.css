@@ -305,21 +305,23 @@ input{
     width: 93%;
     height: 35.9%;
     margin: 10px;
-    background-color: brown;
     border: solid 1px #ddd;
   }
-  .main-ad-block-1list{
+  .main-ad-block-first-list{
     display: flex;
     width: 100%;
     height: 7%;
     border: solid 1px #ddd;
     box-sizing: border-box;
   }
-  .main-ad-block-1list-item:hover{
+  .view{
     background: linear-gradient(to bottom,#faac72 0,#f96d12 70%,#f25307 100%);
+    color: azure;
   }
-  .main-ad-block-1list-item{
+  .listhide{
     background: linear-gradient(to bottom,#fff 0,#ededed 70%,#d2d2d2 100%);
+  }
+  .main-ad-block-first-list-item{
     border: solid 1px #ddd;
     width: 20%;
     padding: 5px 0;
@@ -332,7 +334,10 @@ input{
     overflow: hidden;
   }
   .hide{
-    display: none;
+    display:none;
+  }
+  .show{
+    display: block;
   }
   .tab-ad-block{
     background-color:green;
